@@ -20,13 +20,18 @@ void init_graph()
 void draw_square(uint16_t x,uint16_t y,uint8_t length)
 {
 	setlinecolor(foreground_color);;//将背景色设置成绘图前景色
-	rectangle(x,y,x+length,y+length);
+	rectangle(x,y,x+length-1,y+length-1);
+}
+
+void draw_line(uint16_t x1,uint16_t y1,uint16_t x2,uint16_t y2)
+{
+	line(x1,y1,x2,y2);
 }
 
 void clear_square(uint16_t x,uint16_t y,uint8_t length)
 {
 	setlinecolor(background_color);//将背景色设置成绘图前景色
 	
-	rectangle(x,y,x+length,y+length);
+	rectangle(x,y,x+length-1,y+length-1);
 
 }

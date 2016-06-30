@@ -9,4 +9,7 @@ extern void rand_init();
 
 extern uint8_t	get_rand();
 
+extern void delay(uint32_t time_ms);
+
+extern uint32_t timer_ms_get();
 #endif
